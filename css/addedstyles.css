@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+}
+
+#cover {
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+  background-color: #f3dcd4;
+  max-width: 100%;
+}
+
+#winMap {
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#profile {
+  background-color: #ecc9c7;
+  max-width: 100%;
+}
+
+#womenPhotos {
+  text-align: center;
+}
+
+#quiz {
+  background-color: #f3dcd4;
+  max-width: 100%;
+}
+
+#involvement {
+  background-color: #ecc9c7;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 380px) {
+  #winMap {
+    width: 330px;
+  }
+};

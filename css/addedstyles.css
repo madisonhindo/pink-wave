@@ -24,7 +24,24 @@ body, html {
 }
 
 #womenPhotos {
-  text-align: center;
+  max-width: 905px;
+  margin: 0 auto;
+}
+
+#ocasioText {
+  max-width: 450px;
+}
+
+#omarText {
+  max-width: 450px;
+}
+
+#pressleyText {
+  max-width: 450px;
+}
+
+#sinemaText {
+  max-width: 450px;
 }
 
 #quiz {
@@ -37,7 +54,7 @@ body, html {
   max-width: 100%;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 830px) {
   #winMap {
     width: 330px;
   }

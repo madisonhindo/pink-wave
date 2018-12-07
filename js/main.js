@@ -12,31 +12,26 @@ for ( let i = 0; i < places.length; i++) {
   .addTo(mymap);
 }
 
-$(document).ready(function() {
-  function hideAll() {
+$(document).ready(() => {
+    function hideAll() {
     $('#ocasioText').hide();
     $('#omarText').hide();
     $('#pressleyText').hide();
     $('#sinemaText').hide();
+    
 }
-
   hideAll();
 
-$('#womenPhotos').click(function() {
-    hideAll();
-    switch ($(this).attr("id")) {
-      case 'ocasiocortez':
-        $('#ocasioText').show();
-        break;
-      case 'omar':
-        $('#omarText').show();
-        break;
-      case 'pressley':
-        $('#pressleyText').show();
-        break;
-      case 'sinema':
-        $('#sinemaText').show();
-        break;
-    }
-  });
-  });
+    $('#ocasiocortez').on('click', () => {
+      $('#ocasioText').toggle();
+    });
+    $('#omar').on('click', () => {
+      $('#omarText').toggle();
+    });
+    $('#pressley').on('click', () => {
+      $('#pressleyText').toggle();
+    });
+    $('#sinema').on('click', () => {
+      $('#sinemaText').toggle();
+    });
+});

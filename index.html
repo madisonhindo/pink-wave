@@ -10,7 +10,7 @@
   crossorigin="">
 </head>
 <body>
-  <img src="images/midtermscover.jpg" class="img-fluid" id="cover"></img>
+  <img src="images/midtermscover.jpg" class="img-fluid" id="cover">
   <div class="container" id="map">
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-12 col-sm-12 mb-2">
@@ -24,136 +24,150 @@
   </div>
 
   <div class="container" id="profile">
-    <div class="row align-items-center justify-content-center">
-      <div class="col mb-2">
-        <p class="h2 text-center">Groundbreaking Women</p>
-        <div id="womenPhotos">
-        <img src="images/ocasiocortez.png" class="img-fluid mb-2" id="ocasiocortez"></img>
+    <div id="womenPhotos" class="align-items-center justify-content-center">
+      <div class="row">
+        <div class="col mb-2">
+          <p class="h2 text-center">Groundbreaking Women</p>
+          <img src="images/ocasiocortez.png" class="img-fluid mb-2 align-items-center" id="ocasiocortez" >
+          <img src="images/omar.png" class="img-fluid mb-2" id="omar">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="firstText">
           <p id="ocasioText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <img src="images/omar.png" class="img-fluid mb-2" id="omar"></img>
+        </div>
+        <div class="col" id="secondText">
           <p id="omarText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <img src="images/pressley.png" id="pressley" class="img-fluid"></img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="images/pressley.png" id="pressley" class="img-fluid">
+          <img src="images/sinema.png" id="sinema" class="img-fluid">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="thirdText">
           <p id="pressleyText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <img src="images/sinema.png" id="sinema" class="img-fluid"></img>
+        </div>
+        <div class="col" id="fourthText">
           <p id="sinemaText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container" id="quiz">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-sm-12 col-md-7">
-        <p class="h2 text-center">Quiz: History of Women in Congress</h1>
-          <p>Take the following quiz to test your knowledge on the history of women serving in Congress!</p>
-          <form>
-            <div class="form-group">
-              <label>Who was the first woman elected to Congress?</label>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="jeannette">Jeannette Rankin
-                </label>
+    <div class="container" id="quiz">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm-12 col-md-7">
+          <p class="h2 text-center">Quiz: History of Women in Congress</p>
+            <p>Take the following quiz to test your knowledge on the history of women serving in Congress!</p>
+            <form>
+              <div class="form-group">
+                <label>Who was the first woman elected to Congress?</label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="jeannette">Jeannette Rankin
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="rebecca">Rebecca Felton
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="shirley">Shirley Chisholm
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="katherine">Katherine Langley
+                  </label>
+                </div>
               </div>
 
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="rebecca">Rebecca Felton
-                </label>
+              <div class="form-group" id="majorityLeader">
+                <label>TRUE OR FALSE: Nancy Pelosi is the only female to ever be the Majority Leader in the House of Representatives</label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="true">True
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="false">False
+                  </label>
+                </div>
               </div>
 
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="shirley">Shirley Chisholm
-                </label>
+              <div class="form-group" id="number">
+                <label>What is the record for number of women serving in Congress?</label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="secondLowest">107
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="secondHighest">125
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="highest">130
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="lowest">190
+                  </label>
+                </div>
               </div>
 
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="katherine">Katherine Langley
-                </label>
-              </div>
-            </div>
+              <div class="form-group" id="year">
+                <label>What year was the first woman elected to Congress?</label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="secondEarliest">1923
+                  </label>
+                </div>
 
-            <div class="form-group" id="majorityLeader">
-              <label>TRUE OR FALSE: Nancy Pelosi is the only female to ever be the Majority Leader in the House of Representatives</label>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="true">True
-                </label>
-              </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="secondRecent">1930
+                  </label>
+                </div>
 
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="false">False
-                </label>
-              </div>
-            </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="earliest">1917
+                  </label>
+                </div>
 
-            <div class="form-group" id="number">
-              <label>What is the record for number of women serving in Congress?</label>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="secondLowest">107
-                </label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="firstElected" value="mostRecent">1935
+                  </label>
+                </div>
               </div>
 
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="secondHighest">125
-                </label>
+              <div class="text-center">
+                <button class="btn btn-primary mb-2" type="submit" value="submit">Submit</button>
+                <button class="btn btn-secondary mb-2" type="reset" value="reset">Start over</button>
               </div>
-
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="highest">130
-                </label>
-              </div>
-
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="lowest">190
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group" id="year">
-              <label>What year was the first woman elected to Congress?</label>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="secondEarliest">1923
-                </label>
-              </div>
-
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="secondRecent">1930
-                </label>
-              </div>
-
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="earliest">1917
-                </label>
-              </div>
-
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="firstElected" value="mostRecent">1935
-                </label>
-              </div>
-            </div>
-
-            <div class="text-center">
-              <button class="btn btn-primary mb-2" type="submit" value="submit">Submit</button>
-              <button class="btn btn-secondary mb-2" type="reset" value="reset">Start over</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
 <div class="container" id="involvement">
   <div class="row align-items-center justify-content-center">

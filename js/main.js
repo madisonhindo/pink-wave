@@ -18,7 +18,7 @@ $(document).ready(() => {
     $('#omarText').hide();
     $('#pressleyText').hide();
     $('#sinemaText').hide();
-    
+
 }
   hideAll();
 
@@ -35,3 +35,137 @@ $(document).ready(() => {
       $('#sinemaText').toggle();
     });
 });
+
+$(document).ready(() => {
+    function hideAll() {
+    $('#ocasioTextMobile').hide();
+    $('#omarTextMobile').hide();
+    $('#pressleyTextMobile').hide();
+    $('#sinemaTextMobile').hide();
+
+}
+  hideAll();
+
+    $('#mobileOcasioCortez').on('click', () => {
+      $('#ocasioTextMobile').toggle();
+    });
+    $('#mobileOmar').on('click', () => {
+      $('#omarTextMobile').toggle();
+    });
+    $('#mobilePressley').on('click', () => {
+      $('#pressleyTextMobile').toggle();
+    });
+    $('#mobileSinema').on('click', () => {
+      $('#sinemaTextMobile').toggle();
+    });
+});
+
+const buttonElement = document.getElementById('submitButton');
+const firstCorrect = document.getElementById('firstCorrect');
+const secondCorrect = document.getElementById('secondCorrect');
+const thirdCorrect = document.getElementById('thirdCorrect');
+const fourthCorrect = document.getElementById('fourthCorrect');
+
+const m1 = "<p>Question 1: Correct!</p>";
+const m2 = "<p>Question 1: Incorrect</p>";
+const m3 = "<p>Question 2: Correct!</p>";
+const m4 = "<p>Question 2: Incorrect</p>";
+const m5 = "<p>Question 3: Correct!</p>";
+const m6 = "<p>Question 3: Incorrect</p>";
+const m7 = "<p>Question 4: Correct!</p>";
+const m8 = "<p>Question 4: Incorrect</p>";
+
+function showResults() {
+  message = "";
+  if (firstCorrect.checked === true) {
+    message += m1;
+  }
+  else {
+    message += m2;
+  }
+  if (secondCorrect.checked === true) {
+    message += m3;
+  }
+  else {
+    message += m4;
+  }
+  if (thirdCorrect.checked === true) {
+    message += m5;
+  }
+  else {
+    message += m6;
+  }
+  if (fourthCorrect.checked === true) {
+    message += m7;
+  }
+  else {
+    message += m8;
+  }
+      document.querySelector("#results").innerHTML = message;
+  }
+
+//    document.querySelector("#results").textContent = message;
+buttonElement.addEventListener("click", showResults);
+
+
+
+
+// const buttonElement = document.getElementById('submitButton');
+
+/*
+ $(document).ready(() => {
+  function hideAll() {
+  $('#results').hide();
+}
+hideAll();
+
+function showResults() {
+    $('#results').show();
+  }
+
+buttonElement.addEventListener("click", showResults);
+  });
+
+*/
+
+/*
+<div id="results">
+<p>Correct answers: Jeannette Rankin, True, 125, 1917</p>
+</div>
+  const m1 = "Question 1: Correct!"
+  const m2 = "Question 1: Incorrect"
+  const m3 = "Question 2: Correct!"
+  const m4 = "Question 2: Incorrect"
+  const m5 = "Question 3: Correct!"
+  const m6 = "Question 3: Incorrect"
+  const m7 = "Question 4: Correct!"
+  const m8 = "Question 4: Incorrect"
+
+  function showResults() {
+    if (firstCorrect.checked === true) {
+      message = m1;
+    }
+    else {
+      message = m2;
+    }
+    if (secondCorrect.checked === true) {
+      message = m3;
+    }
+    else {
+      message = m4;
+    }
+    if (thirdCorrect.checked === true) {
+      message = m5;
+    }
+    else {
+      message = m6;
+    }
+    if (fourthCorrect.checked === true) {
+      message = m7;
+    }
+    else {
+      message = m8;
+    }
+    }
+    writeResults();
+*/
